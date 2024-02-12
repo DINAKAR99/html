@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 700px;
+            border: 2px solid black;
+            min-height: 400px;
+            margin: auto ;
+            margin-top: 30px;
+            
+            padding: 10px;
+           
+            
+         
+            
+             
+        }
+        .left{
+            
+            
+            /* box-sizing: border-box; */
+            width: 100%;
+            /* min-height: 700px; */
+           
+
+        }
+        .right{
+             
+            width: 100%;
+            /* position: relative; */
+            margin-left: 0px;
+            /* min-height: 700px; */
+        }
+      
+      .first,.second,.third,.fourth,.fifth{
+        border-radius: 10px;
+      }
+      .first{
+        border: 2px   solid black;
+        width: 100%;
+        box-sizing: border-box;
+        
+         
+        
+        padding:30px;
+      }
+      .second{
+        border: 2px solid black;
+        width: 100%;
+        
+        box-sizing: border-box;
+        
+        padding:30px;
+      }
+        .third{
+            border: 2px solid black;
+            width: 100%;
+            padding:30px;
+            box-sizing: border-box;
+        }
+      .fourth{
+        border: 2px solid black;
+        width: 100%;
+        padding:30px;
+        box-sizing: border-box;
+      }
+      .fifth{
+        border: 2px solid black;
+        width: 100%;
+        padding:30px;
+        box-sizing: border-box;
+      }
+    img{
+      border-radius: 50%;
+    }
+
+    @media (min-width:567px){
+
+      .container{
+            width: 1440px;
+            border: 2px solid black;
+            height: 800px;
+            margin: auto ;
+            margin-top: 30px;
+            display: flex;
+            padding: 100px;
+            justify-content: center;
+            align-items: center;
+         
+            
+             
+        }
+        .left{
+            display: flex;
+            flex-wrap: wrap;
+            /* box-sizing: border-box; */
+            width: 70%;
+            min-height: 700px;
+           
+
+        }
+        .right{
+             display: flex;
+            width: 30%;
+            /* position: relative; */
+            margin-left: 0px;
+            min-height: 700px;
+        }
+      
+      .first,.second,.third,.fourth,.fifth{
+        border-radius: 10px;
+      }
+      .first{
+        border: 2px   solid black;
+        width: 50%;
+        
+        margin-bottom:40px;
+         
+        
+        padding:30px;
+      }
+      .second{
+        border: 2px solid black;
+        width: 30%;
+        margin-bottom:40px;
+        margin-left:40px;
+        
+        padding:30px;
+      }
+        .third{
+            border: 2px solid black;
+            width: 210px;
+            padding:30px;
+
+        }
+      .fourth{
+        border: 2px solid black;
+        width: 30%;
+        padding:30px;
+       
+      }
+      .fifth{
+        border: 2px solid black;
+        width: 50%;
+        padding:30px;
+        margin-left:40px;
+      }
+    img{
+      border-radius: 50%;
+    }
+        
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="left">
+       
+        <div class="sub first">
+           <div class="img 1"><img src="images/image-daniel.jpg" alt=""></div>  
+         <div class="text-1"></div>
+        </div>
+
+
+
+        <div class="sub second">
+          <div class="img 2"><img src="images/image-jonathan.jpg" alt=""></div>
+          
+      <div class="text-1"></div>
+        </div>
+
+
+        <div class="sub fourth">
+          <div class="img 4"><img src="images/image-jeanette.jpg" alt=""></div>
+          
+      <div class="text-1"></div>
+        </div>
+
+
+
+        <div class="sub fifth">
+          <div class="img 5"><img src="images/image-patrick.jpg" alt=""></div>
+          
+      <div class="text-1"></div>
+        </div>
+
+
+
+      </div>  <div class="right">
+
+        <div class="sub third">
+          <div class="img 3"><img src="images/image-kira.jpg" alt=""></div>
+          
+      <div class="text-1"></div>
+        </div>
+      </div>
+
+    
+    </div>
+</body>
+</html>

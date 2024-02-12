@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style> .card { 
+        width: 150px; 
+        height: 150px; 
+        perspective: 1000px; 
+        margin: 10px;
+        border: 0;
+    } 
+    .card-inner { 
+        position: relative; 
+        text-align: center; 
+        transition: transform 0.6s; 
+        transform-style: preserve-3d; 
+    } 
+    .card:hover .card-inner { 
+        transform: rotateY(180deg); 
+    } 
+    .card-front, .card-back { 
+        position: absolute; 
+        backface-visibility: hidden; 
+    } 
+    .card-back {
+       
+        transform: rotateY(180deg); 
+        background-color: dodgerblue;
+       height: 150px;
+    } 
+    a{
+      color: black;
+    }
+    p{
+      position: absolute;
+      top: 125px;
+      width: 100%;
+      color: white;
+    }
+    .nav-item:hover{
+        background-color: gray;
+    }
+    </style> 
+    
+</head>
+<body >
+    <nav class="navbar navbar-expand-md navbar-light bg-primary p-0   ">
+        <a class="navbar-brand " >Contact Manager</a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul class="nav navbar-nav ">
+             <li class="bg-danger "> <a class="nav-item nav-link "href="#" target="" >Home</a></li>
+            <li><a class="nav-item nav-link" href="#">About Us</a></li>
+            <li><a class="nav-item nav-link " href="#">help</a></li>
+
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="row d-flex p-5 pt-3  ">
+        <div class="col-md-4 bg-black    bg-opacity-10 ">
+             <form>
+           
+              <div class="form-group ">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+           
+              <div class="form-group ">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+    
+    
+    
+              <div class="form-group ">
+                <label for="inputState">Gender</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option value="male">male</option>
+                  <option value="male">female</option>
+                </select>
+              </div>
+    
+             
+                <div class="form-group ">
+                  <label for="phone">phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="phone">
+                </div>
+             
+    
+              
+            <button type="submit" class="btn btn-primary mt-4 mb-3 col-12 ">Add Contact</button>
+          </form>
+        </div>
+       
+        
+          <div class="col-md-8 px-4  ">
+            <h2>Contacts (cards view)</h1> 
+            <h5 >hover the mouse on cards to see details</h5>
+
+            <div class="d-md-flex ">
+                <div class="card "> 
+                
+                
+                    <div class="card-inner"> 
+                        <div class="card-front"> 
+                            <div class="position-relative  "><!-- adding picture in the card -->
+                              <img src="images/avatar1.png" style="width:150px;height:150px;"> 
+                              <p class="bg-dark bg-opacity-50  ">hello</p></div>
+                            
+                        </div> 
+                        
+                        <!-- Decorate card back side -->
+                        <div class="card-back"> 
+                            <h3>Peter Parker</h3> <br>
+                            <a type="email" href="peter@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>peter@gmail.com</a>
+                            <a type="tel"><i class="fa fa-phone" aria-hidden="true"></i>547-165-2403</a>
+                            <p></p> 
+                            
+                             
+                        </div> 
+                    </div> 
+                </div> 
+
+                <div class="card   "> 
+                
+                
+                    <div class="card-inner"> 
+                        <div class="card-front"> 
+                            
+                            <!-- adding picture in the card -->
+                            <img src="images/avatar2.png" style="width:150px;height:150px;"> 
+                            <p class="bg-dark bg-opacity-50 ">hello</p>
+                        </div> 
+                        
+                        <!-- Decorate card back side -->
+                        <div class="card-back"> 
+                            <h3>Peter Parker
+                            </h3> <br> <a type="email" href="peter@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>peter@gmail.com</a>
+                            <a type="tel"><i class="fa fa-phone" aria-hidden="true"></i>547-165-2403</a>
+                            <p></p> 
+                            
+                             
+                        </div> 
+                    </div> 
+                </div>
+
+                <div class="card   "> 
+                
+                
+                    <div class="card-inner"> 
+                        <div class="card-front  "> 
+                            
+                            <!-- adding picture in the card -->
+                            <img src="images/avatar3.png" style="width:150px;height:150px;"> 
+                           <div> <p class="bg-dark bg-opacity-50 ">hello</p></div>
+                        </div> 
+                        
+                        <!-- Decorate card back side -->
+                        <div class="card-back "> 
+                            <h3>james cameron</h3> 
+                            <br> <a type="email" href="jamescameron@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>james@gmail.com</a>
+                            <br>
+                            <a type="tel"><i class="fa fa-phone" aria-hidden="true"></i>547-165-2403</a>
+                            <br>
+                  
+                            <p></p> 
+                            
+                             
+                        </div> 
+                    </div> 
+                </div>
+
+
+                <div class="card"> 
+                    
+                    
+                    <div class="card-inner"> 
+                        <div class="card-front"> 
+                            
+                            <!-- adding picture in the card -->
+                            <img src="images/avatar4.jpg" style="width:150px;height:150px;"> 
+                            <p class="bg-dark bg-opacity-50 ">hello</p>
+                        </div> 
+                        
+                        <!-- Decorate card back side -->
+                        <div class="card-back"> 
+                            <h3>Peter Parker</h3> <br>
+                            <a type="email" href="peter@gmail.com" class="text-white"><i class="fa fa-envelope-o"></i>peter@gmail.com</a>
+                            <a type="tel"><i class="fa fa-phone" aria-hidden="true"></i>547-165-2403</a>
+                            <p></p> 
+                            
+                             
+                        </div> 
+                    </div> 
+                </div> 
+                
+
+
+            </div>
+          </div>
+    </div>
+      
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+                <img src="images/avatar1.png" style="width:30px;height:30px;border-radius: 50%;">
+            </th>
+            <td>peter parker</td>
+            <td>peter@gmail</td>
+            <td>192020202</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="images/avatar1.png" style="width:30px;height:30px;border-radius: 50%;"></th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="images/avatar1.png" style="width:30px;height:30px;border-radius: 50%;"></th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="images/avatar1.png" style="width:30px;height:30px;border-radius: 50%;"></th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <div class="bg-black bg-opacity-75 text-white ">
+        <div class="d-flex justify-content-center  p-2  ">Copyright Contact Manager © 2020</div>
+        <div class="row d-flex ">
+            <div class="col-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, id.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos soluta error illum dicta quas reprehenderit corporis quibusdam eius nesciunt?
+            </div>
+            <div class="col-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quisquam tenetur harum, voluptatibus quis sed odit similique numquam maxime a.  id.
+            </div>
+            <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quisquam tenetur harum, voluptatibus quis sed odit similique numquam maxime a.  id.
+            </div>
+
+             </div>
+
+</body>
+</html>

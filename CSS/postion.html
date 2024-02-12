@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        background-color: navy;
+        color: wheat;
+        margin: 0;
+        height: 60px;
+        position: fixed; 
+        width: 100vw; 
+        top: 0;  
+        z-index: 1  ;    
+    }
+    h4{
+        margin: 0;
+        padding-left: 10px ;
+        line-height: 60px;
+    }
+    body{
+        margin: 0;
+    }
+    .boxes{
+        margin-top: 80px;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        margin: 20px;
+        
+    }
+    .boxed{
+        margin-top: 80px;
+
+        position: sticky;
+        width: 100px;
+        height: 50px;
+        background-color: blueviolet;
+    }
+    .rel-position{
+        position: relative;
+     top: 15px;
+     width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        margin: 20px;
+        
+    }
+
+
+    .absolue-position{
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: orange;
+    }
+ 
+</style>
+<body>
+    <nav>
+        <h4>this is a nav bar</h4>
+
+    </nav>
+    <div class="boxed"></div>
+    <div class="boxes">
+        <div class="box     rel-position">
+            <div class="absolue-position"></div>
+        </div>
+        <div class="box"></div>
+        
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

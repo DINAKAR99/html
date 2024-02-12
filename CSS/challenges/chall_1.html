@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Karla', sans-serif;
+           
+        }
+     
+        .card{
+            box-shadow: 4px -1px 16px 0px rgba(77,77,77,1);
+            width: 600px;
+            margin: 20px;
+            min-height: 500px;
+           
+            
+       
+
+        }
+        h1{
+            color: hsl(179, 62%, 43%);
+            font-size: 1rem;
+        }
+        h2{
+            color: hsl(71, 73%, 54%); 
+            font-size: 1rem;
+        }
+      
+        button{
+            background-color: hsl(71, 73%, 54%);
+            width: 240px;
+            height: 50px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+        button:hover{
+            transform: scale(1.04);
+        }
+        #price{
+            color: white;
+            font-size:x-large;
+        }
+        #month{
+            color: rgba(255, 255, 255, 0.4);
+            font-size: medium;
+        }
+        #first_3{
+            color: hsl(201, 10%, 74%);
+            font-weight: 700;
+            line-height: 20px;
+            font-size: 0.8rem;
+    
+        }
+        .first{
+            border: 2px solid black;
+            height:200px;
+            width: 100%;
+            background-color: white;
+            padding: 50px;
+            padding-bottom: 0;
+            padding-right: 0;
+            border: 0;
+            box-sizing: border-box;
+            
+            
+        }
+        .second{
+            display: flex; 
+            flex-direction: column; 
+            width: 100%;
+            
+        }
+        .left,.right{
+            
+            height:180px;
+            width: 100%;
+            padding:50px;
+            padding-top: 20px;
+            box-sizing: border-box;
+       
+            
+        }
+        .left{
+            background-color: hsl(179, 62%, 43%);
+        }
+        .right{
+            background-color: hsl(179, 59%, 62%);
+            
+        }
+        h4{
+            color:white;
+        }   
+        ul{
+            list-style-type: none;
+            padding: 0;
+            color:rgba(255, 255, 255, 0.6   );
+            
+        }
+        li{
+            margin-bottom: 1px;
+        }
+    @media(min-width:576px){
+
+        .second{
+            flex-direction: row;
+            width: 100%;
+            
+
+        }
+        .left,.right{
+            
+           height: 100%;
+            width: 50%;
+            padding:50px;
+            padding-top: 20px;
+            
+        
+       
+            
+        }
+        .first{
+            box-sizing: border-box;
+           width: 100%; 
+           padding: 50px;
+            padding-bottom: 0;
+            padding-right: 0;
+            overflow: hidden;
+            
+        }
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+    <div class="first">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p id="first_3">Gain access to our full library of tutorials along with expert code reviews.<br>
+                Perfect for any developers who are serious about honing their skills. </p>
+
+    </div>
+    <div class="second">
+        <div class="left">
+            <h4> Monthly Subscription</h4>
+            <p id="price">$29<span id="month"> per month</span></p>
+            <p style="color:rgba(255, 255, 255, 0.7     )">Full access for less than $1 a day</p>
+            <button>Sign Up</button>
+        </div><div class="right">
+            <h4>Why Us</h4>
+            <ul>
+                <li>Tutorials by industry experts</li>
+                <li>Peer & expert code review</li>
+                <li>Coding exercises</li>
+                <li>Access to our GitHub repos</li>
+                <li>Community forum</li>
+                <li>Flashcard decks</li>
+                <li>New videos every week</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
